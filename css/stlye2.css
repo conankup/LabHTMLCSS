@@ -1,0 +1,118 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FF6633;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* กำหนดตำแหน่งที่จะให้แสดง Tool tip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /* Pagination */
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black; /*สีของตัวเลขหน้าตั้งต้น*/
+    float: left; /* เรียงลำดับจากซ้ายไปขวา */ 
+    padding: 8px 16px; /* กำหนดความสูงของกรอบ คือ สูง 8px กว้าง 16px */
+    text-decoration: none; /* กำหนดเส้นใต้ */
+  }
+  
+  .pagination a.active {
+    background-color: #FF6633; /* สีของพื้นหลังกรอบ ขณะที่คลิกอยู่ที่ตรงนั้น */
+    color: white; /* สีของตัวหนังสือ ขณะที่คลิกอยู่ที่ตรงนั้น*/
+    border-radius: 20px; /* กำหนดความโค้งมนของ ขอบ ขณะที่คลิกอยู่ที่ตรงนั้น*/
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd; /* สีของพื้นหลังกรอบ ขณะที่เม้าส์อยู่เหนือตรงนั้น */
+    border-radius: 20px; /* กำหนดความโค้งมนของ ขอบ ขณะที่คลิกอยู่ที่ตรงนั้น */
+  }
+
+  /* Navigator bar */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  
+  li {
+    float: left;
+    
+  }
+
+  li a {
+    display: block;
+    color: #000000; /* สีตัวหนังสือตั้งต้น */
+    padding: 18px 30px; /* กำหนดขนาดกรอบ */
+    text-decoration: none;/* กำหนดเส้นใต้ */
+    background-color: #f1f1f1; /* กำหนดสีพื้นหลังของกรอบ*/
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #FF6633; /* สีของพื้นหลังขณะที่เม้าชี้ */ 
+    color: white; /* สีตัวหนังสือขณะที่เม้าชี้*/
+  }
+
+  /* Dropdowns  */
+
+  .dropbtn {
+    background-color: #4CAF50;/* สีพื้นหลังตั้งต้นของ menu*/
+    color: white; /* สีตัวหนังสือของ menu */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none; /* กำหนดการแสดง none คือยังไม่ให้แสดงขณะที่เม้ายังไม่ชี้ */
+    position: absolute; /* กำหนดตำแหน่งในการแสดง */
+    background-color: #f9f9f9; /* สีพื้นหลังของ sub menu */
+    min-width: 120px; /*กำหนดความกว้าง sub menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*กำหนดเงาให้กับ sub menu */
+  }
+  
+  .dropdown-content a {
+    color: black; /* สีตัวหนังสือของ sub menu */
+    padding: 12px 16px; /* กำหนดระยะขอบตัวตัวหนังสือ */
+    text-decoration: none;/*กำหนดเส้นใต้ตัวหนังสือ */
+    display: block; /* คุณลักษณะเพิ่มเติมในการแสดงรายการ */ 
+  }
+  
+  .dropdown-content a:hover {background-color: #d1d1d1} /* สีพื้นหลัง sub menu ขณะที่เม้าส์ชี้ */
+
+  .dropdown:hover .dropdown-content {
+    display: block;  /* กำหนดให้แสดง  sub menu ขณะที่เม้าชี้ */
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #FF6633; /* สีพื้นหลังของ menu ขณะที่เม้าชี้*/
+  }
