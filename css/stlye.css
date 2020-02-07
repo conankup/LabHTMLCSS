@@ -1,0 +1,14 @@
+#idName{
+    color: red;
+}
+
+.h3{
+    color: blue;
+}
+
+table,
+td,
+th{
+    border-spacing: 5px;
+    border: 2px solid rgba(255, 107, 21, 0.925);
+}
